@@ -1,0 +1,59 @@
+.space-txt-ch{
+    padding-left: 10px;
+}
+
+.toolbar-flex {
+    flex: 1 0.5 auto;
+}
+.imgInvisivel{
+    display: none;
+    visibility: hidden;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.centeredForm{
+    padding: 30px;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.stretchFlex
+{
+    flex: 1;
+}
+
+.semQuebraDeLinha{
+    white-space: nowrap;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.nome{
+    margin-bottom: 10px;
+}
+
+.personal-info{
+    padding: 30px;
+}
+
+.personal-filed{
+    display: flex;
+}
+
+.centerClickImg{
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top: 0; 
+  bottom: 0; 
+  margin-top: auto; 
+  margin-bottom: auto; 
+}

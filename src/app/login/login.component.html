@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class='nomeio'>
+    <h3>Faça Login</h3>
+    <div class='nome'>
+      <ion-input class="usuario" placeholder="Usuário ou E-mail" type="text" [(ngModel)]='mCliente.mUsuario'></ion-input>
+    </div>
+
+    <div class='nome'>
+      <ion-input class="senha" placeholder="Senha" type="password" [(ngModel)]='mCliente.mSenha'></ion-input>
+    </div>
+
+    <ion-button (click)='fzrLogin()' color="primary">Entrar</ion-button>
+  </div>
+</ion-content>

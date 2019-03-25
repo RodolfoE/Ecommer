@@ -1,0 +1,251 @@
+
+.container-foto-caracteristica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.app-promocoes{
+    width: 50%;
+}
+.grid-item {
+    display: block;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;  
+}
+
+/*Comentários*/
+.grid-item-comment{
+    display: block;
+    padding: 0px;
+    font-size: 30px;
+    margin-top: 15px;   
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+.comentario-header{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: sans-serif;
+    margin:0px;
+}
+
+.text-box-comment {
+    height: 90px;
+    padding: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    width: 100%; 
+    font-size: 13px;   
+    float: right;
+    margin:0px;
+}
+
+
+.example-card-comment{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.example-card-comment:hover{
+    box-shadow: 0px 0px 10px 0px;  
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btns{
+    text-align: right;
+}
+/*Fim - Comentários*/
+
+.example-card:hover {
+    box-shadow: 0px 0px 10px 0px;
+  }
+
+  .example-card {
+    width: 80%;
+    display: inline-block;
+  }
+
+
+.div_foto{
+    border-style: solid;
+    border-width: 0.5px;
+    border-left: white;
+    border-right: white;
+    border-top: white;
+}
+
+
+.section-comment{
+    display: flex;
+    flex-direction: column;
+}
+
+div > img{
+    height: 55px;
+    width: 55px;
+    margin-left:5px;    
+}
+
+
+
+.promocoes{
+    background: yellow;
+}
+
+span{
+    height: 100px;
+    width: 0.3%;
+    /* float: left; */
+    position: absolute;
+}
+
+.div_foto:hover > span {
+    height: 60px;
+    width: 1px;
+    /* float: left; */
+    position: absolute;
+    background: cornflowerblue;
+}
+
+.example-header-image {
+    background-image: url('https://www.nike.com/android-icon-128x128.png');
+    background-size: cover;
+    height: auto;
+    width: 60px;
+  }
+  .qt_input{
+      width:65px;
+      font-size: 17px
+  }
+
+  .swiper-container {
+    width: 700px;
+    height: 400px;
+}
+
+  .slideshow{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+}
+.arrow-left{
+    background: transparent;
+    color: #999;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    left: 0;
+}
+
+.arrow-right{
+    background: transparent;
+    color: #999;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    right: 0;
+}
+
+.circles {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+.circleDot {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 200ms ease;
+    background: #d6d6d6;
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    display: inline-block;
+  }
+
+  .circleDot.active {
+    background: #0089FF;
+  }
+
+  .card {
+    height: 335px;
+    background-position: center;
+    background-size: cover;
+    padding-left:21%;
+  }
+
+  .maxWidth{
+      width: 400px;
+  }
+
+
+  
+  
+
+  .example-header-image {
+    background-image: url('https://www.nike.com/android-icon-128x128.png');
+    background-size: cover;
+  }
+
+
+  #p_qtd{
+      font-size: 8px;
+      margin-bottom: 0px;
+      text-align: left;
+      position: relative;
+      top: 6px;
+  }
+
+  .comment_title{
+    font-weight:bold;
+    text-align: left;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-content: start;
+    padding: 0px;
+  }
+  
+  .text-tempo-atras-comment{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    right: 29px;
+    font-size: 13px;
+    color: dimgrey;
+  }
+
+.div-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,322 @@
+.promocoes{
+  width: 70%;
+  margin-left:15%;
+  margin-right:15%;
+}
+.subpromocoes{
+  position: relative;
+}
+.spacer{
+  width: 15%;
+  display: inline;
+}
+.left-side-menu{
+  float: left;
+  width: 17%;
+}
+
+.produtos-container{
+  float: right;
+  width: 100%;
+  overflow: auto; 
+}
+
+.header-border{
+  border-style: groove;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  display:flex;
+  justify-content: center;
+}
+
+.example-card {
+    width: 350px;
+    margin-top: 20px;
+  }
+  .example-header-image {
+    background-image: url('https://www.nike.com/android-icon-128x128.png');
+    background-size: cover;
+  }
+
+  .example-card:hover {
+    box-shadow: 0px 0px 10px 0px;
+  }
+  
+  /* 
+  ##Device = nexus 7
+  ##Screen = B/w 600px to 900px
+*/
+@media (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    display: flex;
+    grid-row-gap: 25px;
+    /*
+    -ms-grid-columns: auto ;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }  
+}
+
+/* 
+  ##Device = Galaxy S5
+  ##Screen = B/w 360px to 640px
+*/
+@media (min-width: 360px) and (max-width: 640px) {
+  .grid-container {
+    display: flex;
+    grid-row-gap: 25px;
+    /*
+    -ms-grid-columns: auto ;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 900px) and (orientation: landscape) {
+  .grid-container {
+    display: flex;
+    grid-row-gap: 25px;
+    /*
+    -ms-grid-columns: auto ;*/
+    flex-direction: row;
+    flex-flow: row || row || row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }  
+}
+
+  
+
+  .grid-item {
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+}
+.slideshow{
+    position: relative;
+}
+.arrow-left{
+    background: transparent;
+    color: #999;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    left: 0;
+}
+
+.arrow-right{
+    background: transparent;
+    color: #999;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    right: 0;
+}
+
+.circles {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+.circleDot {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 200ms ease;
+    background: #d6d6d6;
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    display: inline-block;
+  }
+
+  .circleDot.active {
+    background: #0089FF;
+  }
+
+  .produtos{
+    position: absolute;
+    right: 65px;
+    top: 450px;
+  }
+
+  body{
+    clear: both;
+    height: 2000px;
+  }
+
+  body:after {
+    clear: both; 
+    content: "";
+    display: table; 
+  }
+
+.size-btn{
+  background: burlywood;
+}
+
+.preco{
+  font-size: 30px;
+  margin:0px;
+}
+
+.adicionados{
+  text-align: right;
+  margin: 0px;
+  font-size: 12px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* 
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+}
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+   
+  
+}

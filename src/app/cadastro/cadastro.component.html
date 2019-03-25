@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div label="Informações Pessoais">
+    <div class="image-upload" style="text-align:center;">
+      <div for="file-input" style="position: relative; display: inline-block">
+        <img [src]="linkToProfilePicture" style="border-radius: 160px" class="rounded-circle" width="304" height="304">
+        <img #img src="assets/load-picture.png" class="centerClickImg" width="104" height="104">
+      </div>
+      <input type="file" (change)='onFileSelected($event)' id="file-input">
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-label color="primary" fixed>Nome</ion-label>
+        <ion-input placeholder="Ex: Jose Algusto Ribeiro Filho" [(ngModel)]='mCliente.mNome'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" fixed>Usuario</ion-label>
+        <ion-input placeholder="Ex: JoseFilho" [(ngModel)]='mCliente.mUsuario'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Senha</ion-label>
+        <ion-input type="password" placeholder="Senha" [(ngModel)]='mCliente.mSenha' appAppPassword></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Confirmar Senha</ion-label>
+        <ion-input type="password" placeholder="Confirmar Senha" [(ngModel)]='ConfirmacaoSenha' appAppPassword></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>E-mail</ion-label>
+        <ion-input type="email" placeholder="E-mail" [(ngModel)]='mCliente.mEmail'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary">Genero</ion-label>
+        <ion-select placeholder="Selecione um">
+          <ion-select-option value="f">Mulher</ion-select-option>
+          <ion-select-option value="m">Homem</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Idade</ion-label>
+        <ion-input type="number" [(ngModel)]='mCliente.mIdade' placeholder="Idade"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" fixed>Telefone</ion-label>
+        <ion-input placeholder="Exemplo: (31)98877-6655" [(ngModel)]='mCliente.mEndereco.contato'></ion-input>
+      </ion-item>
+
+      <ion-list-header>Endereço para entrega</ion-list-header>
+
+      <ion-item>
+        <ion-label color="primary" fixed>Código Postal</ion-label>
+        <ion-input placeholder="" [(ngModel)]='mCliente.mEndereco.postalCode'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" fixed>Rua</ion-label>
+        <ion-input placeholder="" [(ngModel)]='mCliente.mEndereco.street'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Número</ion-label>
+        <ion-input type="number" [(ngModel)]='mCliente.mEndereco.number' placeholder="N°"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Bairro</ion-label>
+        <ion-input type="text" placeholder="Bairro" [(ngModel)]='mCliente.mEndereco.district'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Cidade</ion-label>
+        <ion-input type="text" placeholder="Cidade" [(ngModel)]='mCliente.mEndereco.city'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Estado</ion-label>
+        <ion-input type="text" placeholder="UF" [(ngModel)]='mCliente.mEndereco.state'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Complemento</ion-label>
+        <ion-input type="text" placeholder="Apt: 15" [(ngModel)]='mCliente.mEndereco.complement'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="primary" stacked>Ponto de Referência</ion-label>
+        <ion-input type="text" placeholder="Ex: Igreja, padaria, restaurante..." [(ngModel)]='mCliente.mEndereco.pontoRef'></ion-input>
+      </ion-item>
+
+    </ion-list>
+    
+    <ion-button (click)='salvarCadastro()' expand="full" color="secondary" class="ion-color ion-color-secondary button button-full button-solid ion-activatable ion-focusable hydrated activated">
+        Cadastrar
+      </ion-button>
+  </div>
+</ion-content>
+
+
+<!--
+export ANDROID_HOME=/home/rodolffo/Android/Sdk/
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+-->

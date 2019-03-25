@@ -1,0 +1,76 @@
+<!--
+<div class='container-foto-caracteristica'>
+  <div class='app-promocoes'>
+    <app-promocoes></app-promocoes>
+  </div>
+
+  <div class="grid-item" routerLink="/produto" routerLinkActive="active">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title style='font-weight:bold'>{{mProduto.nomeProduto}}</mat-card-title>
+        <mat-card-subtitle>{{mProduto.descricao}}</mat-card-subtitle>
+      </mat-card-header>
+      <h3>{{mProduto.preco}}</h3>
+      <mat-card-content>
+        <p>Caracteristicas</p>
+        <p>Tamanhos:</p>
+        <div *ngFor='let i of mProduto.qtdEmTamanhos.tamanhos' >
+          <mat-button-toggle>{{i.toUpperCase()}}</mat-button-toggle>
+        </div>
+        <ul>
+          <li>
+            Frete Gratuito em compras acima de R$100
+          </li>
+          <li>
+            Devolução grátis abaixo de 7 dias
+          </li>
+        </ul>
+
+      </mat-card-content>
+
+      <div class='div-flex'>
+        <div style='display:inline-block'>
+          <p id='p_qtd'>Quantidade</p>
+          <input type="number" value="50" class='qt_input'>
+        </div>
+
+        <div>
+          <button mat-raised-button color="primary">
+            Comprar
+          </button>
+        </div>
+
+        <div>
+          <button mat-raised-button>
+            <i class="fa fa-shopping-cart fa-1x" style='margin-right:2px;' aria-hidden="true"></i>Add
+          </button>
+        </div>
+
+      </div>
+    </mat-card>
+  </div>
+</div>
+<div class="grid-item-comment">
+  <p class='comentario-header'>Comentários</p>
+  <textarea rows="4" cols="50" class='text-box-comment' [(ngModel)]='mTxtComment'>Eu sou apenas um rapaz latino americano, sem dinheiro no banco!</textarea>
+  <div class="btns">
+    <button mat-raised-button color="primary" (click)='enviarComentario()'>Enviar</button>
+    <button mat-raised-button>Apagar</button>
+  </div>
+
+  <div class='container-card'>
+
+    <mat-card class="example-card-comment" *ngFor='let comments of mProduto.comentarios'>
+      <p class='text-tempo-atras-comment'>{{comments.data}}</p>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class='comment_title'>{{comments.mCliente.mNome}}</mat-card-title>
+        <mat-card-subtitle>{{comments.txt}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
+-->

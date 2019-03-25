@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Configuração
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="espacamento" (click)='abrirTelaLogin()'>
+    <ion-avatar slot="start" >
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label class="texto-avatar">Efetuar Login</ion-label>
+  </ion-item>
+  <ion-list>
+    <ion-item (click)='abrirTelaCadastro()'>
+      <ion-label>Cadastro</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sobre a loja</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Entrar em contato</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sair</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

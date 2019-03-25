@@ -1,0 +1,72 @@
+<div class='titulo'>Cadastro de Produto</div>
+<div class='insert-fields'>
+  <div class='nome'>
+      Nome:
+      <input type="text" value="topzera" [(ngModel)]='mProd.nomeProduto'>
+  </div>
+
+  <div class='marca'>
+      Marca:
+      <input type="text" value="Rodolfo Abrantes" [(ngModel)]='mProd.marca'>
+  </div>
+
+  <div class='descricao'>
+    Descrição:
+    <input type="text" value="Rodolfo Abrantes" [(ngModel)]='mProd.descricao'>
+</div>
+  
+  <div class='preco'>
+    Preço: R$
+      <input type="number" value="Rodolfo Abrantes" [(ngModel)]='mProd.preco'>  
+  </div>
+
+  <div class='genero'>
+      Genero:
+      <select [(ngModel)]="mProd.genero">
+        <option value="m">Masculino</option>
+        <option value="f">Feminino</option>
+      </select>
+  </div>
+
+  <div>
+    
+  <div class='categoria'>
+    Categorias
+    <select [(ngModel)]='mCategoria'>
+      <option value="Camisa">Camisa</option>
+      <option value="Calças">Calças</option>
+      <option value="Acessórios">Acessórios</option>
+      <option value="Bermudas">Bermudas</option>
+      <option value="Meias e Cuecas">Meias e Cuecas</option>
+      
+    </select>
+
+  </div>
+  </div>
+
+  <div class='tamanho'>
+    Quantidade por Tamanho:
+    <div class='size'>
+      P:
+      <input type="text" value="Rodolfo Abrantes" [(ngModel)]='mProd.qtdEmTamanhos.p'>
+    </div>
+    <div class='size'>
+      M:
+      <input type="text" value="Rodolfo Abrantes" [(ngModel)]='mProd.qtdEmTamanhos.m'>
+    </div>
+    <div class='size'>
+      G:
+      <input type="text" value="Rodolfo Abrantes" [(ngModel)]='mProd.qtdEmTamanhos.g'>
+    </div>
+  </div>
+
+  <div class='foto'>
+    <img src="assets/photo.jpeg" alt="">
+    <!-- <input type="file" name="photo" ng2FileSelect [uploader]="produtosService.uploader" /> -->
+    <button (click)='addFoto()'>Add</button>
+  </div>
+
+</div>
+<div class='btns'>
+  <button (click)='addProduto()'>Inserir Produto</button>
+</div>
